@@ -114,7 +114,7 @@ a {
 .content__title {
   font-size: 3rem;
   font-weight: 500;
-  margin: 0;
+  margin: 1rem;
 }
 .content__description {
   color: var(--color-secondary);
