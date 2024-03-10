@@ -56,27 +56,35 @@ a {
   margin-inline: auto;
 }
 
+.container--sm {
+  width: min(100% - var(--gap-lg), var(--container-sm));
+  /* margin-inline: auto; */
+}
+
 .header {
   background-color: var(--color-gray-light);
   padding-top: 66px;
   padding-bottom: 141px;
+  min-height: 700px; /* можно не устанавливать  */
 }
 .container {
 }
 .navbar {
-  margin-bottom: 162px;
+  margin-bottom: 134px;
 }
 .navbar__list {
   display: flex;
-  column-gap: 22px;
+  column-gap: 23px;
+  margin-left: -10px; /* компенсируем несовпадение вертикали из-за паддингов */
 }
-.navbar__item {
-}
+/* .navbar__item {
+} */
 .navbar__link {
   color: var(--color-black);
   padding: var(--gap-sm);
   display: block;
   /* transition: scale 0.1s; */
+  letter-spacing: var(--letter-spacing);
 }
 .navbar__link:hover {
   color: var(--color-primary);
@@ -88,7 +96,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
+  gap: 34px; /* регулируем положение текста content__description под Дизайн и верстка */
 }
 .content__title {
   font-size: 3rem;
@@ -97,6 +105,7 @@ a {
 }
 .content__description {
   color: var(--color-secondary);
+  margin-bottom: 22px; /* положение кнопки */
 }
 .content__link {
   color: var(--color-white);
