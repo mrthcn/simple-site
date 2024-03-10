@@ -115,10 +115,12 @@ a {
   font-size: 3rem;
   font-weight: 500;
   margin-top: 1rem;
+  margin-bottom: 13px;
 }
 .content__description {
   color: var(--color-secondary);
   margin-bottom: 22px; /* положение кнопки */
+  line-height: var(--line-height-lg); /* === */
 }
 .content__link {
   color: var(--color-white);
