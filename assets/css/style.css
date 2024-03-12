@@ -99,7 +99,7 @@ a {
   letter-spacing: var(--letter-spacing);
 }
 
-.navbar__mainlink {
+.navbar__link--main {
   color: var(--color-primary);
   font-weight: 500;
 }
