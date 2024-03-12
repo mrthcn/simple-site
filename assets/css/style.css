@@ -98,6 +98,12 @@ a {
   /* transition: scale 0.1s; */
   letter-spacing: var(--letter-spacing);
 }
+
+.navbar__mainlink {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
 .navbar__link:hover {
   color: var(--color-primary);
   /* scale: 1.1; */
