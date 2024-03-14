@@ -33,7 +33,6 @@
 }
 
 * {
-  /* -webkit-box-sizing: border-box; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -77,13 +76,9 @@ a {
 
 .header {
   background-color: var(--color-gray-light);
-  padding-top: 66px;
   min-height: 692px; /* === 700 можно не устанавливать  */
 }
 
-.navbar {
-  margin-bottom: 134px;
-}
 .navbar__list {
   display: flex;
   flex-wrap: wrap;
@@ -235,8 +230,6 @@ a {
   border: 0;
   height: 600px;
   width: 100%;
-  /* border: 1px solid var(--color-secondary);
-  background-color: var(--color-gray-light); */
 }
 
 .footer {
@@ -254,66 +247,39 @@ a {
   font-size: 13px;
   padding-left: 8px;
 }
-
-@media (max-width: 810px) {
-  .navbar {
-    margin-bottom: 90px;
+@media (min-width: 576px) {
+  .header {
+    padding-top: 66px;
   }
-  .experience__container {
-    justify-content: center;
+  .navbar {
+    margin-bottom: 134px;
+  }
+}
+
+@media (max-width: 575.8px) and (min-width: 395px) {
+  .header {
+    padding-top: 33px;
+  }
+  .navbar {
+    margin-bottom: 84px;
+  }
+  .content__title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 394.8px) {
+  .header {
+    padding-top: 10px;
+  }
+  .navbar {
+    margin-bottom: 47px;
   }
   .content__title {
     font-size: 2.5rem;
   }
-}
-
-@media (max-width: 660px) {
-  .navbar {
-    margin-bottom: 50px;
-  }
-  .header {
-    padding-top: 33px;
-  }
-  .content__link {
-    min-width: 150px;
-    min-height: 45px;
-  }
-  .about {
-    padding-top: 80px;
-    padding-bottom: 60px;
-  }
-  .content__title {
-    font-size: 2rem;
-  }
-  .section__title {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-  }
-  .header {
-    min-height: 576px;
-  }
-  .about {
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-  .section {
-    padding-top: 60px;
-    padding-bottom: 26px;
-  }
-  .video {
-    padding-bottom: 50px;
-  }
-  .footer {
-    padding: 25px 0;
-  }
-}
-
-@media (max-width: 390px) {
-  .navbar {
-    margin-bottom: 20px;
-  }
-  .experience {
-    padding: 60px 0;
+  .experience__container {
+    justify-content: center;
   }
   .video {
     padding-bottom: 30px;
