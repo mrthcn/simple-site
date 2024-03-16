@@ -91,18 +91,18 @@ a {
   color: var(--color-black);
   padding: var(--gap-sm);
   display: block;
-  /* transition: scale 0.1s; */
+  transition: scale 0.1s;
   letter-spacing: var(--letter-spacing);
 }
 
-.navbar__link--main {
+.navbar__link--active {
   color: var(--color-primary);
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .navbar__link:hover {
   color: var(--color-primary);
-  /* scale: 1.1; */
+  scale: 1.1;
   /* font-weight: 500; */
 }
 .content {
