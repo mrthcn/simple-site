@@ -1,0 +1,52 @@
+.experience {
+  background-color: $color-primary;
+  padding: 99px 0;
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    gap: $gap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // ======================================================
+    @media (max-width: calc($lg - 0.5px)) {
+      justify-content: center;
+    }
+    // ======================================================
+    // @media (max-width: calc($lg - 0.2px)) and (min-width: $xx) {
+    //   justify-content: center;
+    // }
+    // @media (max-width: calc($xx - 0.2px)) {
+    //   justify-content: center;
+    // }
+    // ======================================================
+  }
+
+  &-item {
+    display: flex;
+    gap: $gap;
+    justify-content: center;
+
+    @media (max-width: calc($lg - 0.5px)) and (min-width: $xx) {
+      flex-basis: 30%;
+    }
+    @media (max-width: calc($xx - 0.5px)) {
+      flex-basis: 45%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    &__number {
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    &__image {
+      order: -1;
+    }
+  }
+}

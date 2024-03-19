@@ -1,0 +1,93 @@
+.navbar {
+  &__btn {
+    width: 30px;
+    height: 22.5px;
+    position: relative;
+    margin-left: 20px;
+    transform: rotate(0deg);
+    cursor: pointer;
+
+    @media (min-width: calc($md + 1px)) {
+      display: none;
+    }
+
+    &.active span {
+      &:nth-child(1) {
+        top: 9px;
+        transform: rotate(135deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        left: -30px;
+      }
+      &:nth-child(3) {
+        top: 9px;
+        transform: rotate(-135deg);
+      }
+    }
+
+    &-row {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: $color-black;
+      // border-radius: 4px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 9px;
+      }
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+    margin-left: -10px;
+
+    @media (max-width: $md) {
+      display: none;
+      // text-align: center;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    padding: $gap-sm;
+    display: block;
+    transition: scale 0.1s;
+    letter-spacing: $letter-spacing;
+
+    &--active {
+      color: $color-primary;
+    }
+
+    &:hover {
+      color: $color-primary;
+      scale: 1.1;
+    }
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 148px;
+  }
+  @media (max-width: calc($lg - 0.2px)) and (min-width: $xx) {
+    margin-bottom: 128px;
+  }
+  @media (max-width: calc($xx - 0.2px)) {
+    margin-bottom: 94px;
+  }
+}

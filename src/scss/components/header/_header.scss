@@ -1,0 +1,12 @@
+.header {
+  background-color: $color-gray-light;
+  padding-bottom: 131px;
+  min-height: 690px;
+
+  @media (min-width: $lg) {
+    padding-top: 66px;
+  }
+  @media (max-width: calc($lg - 0.2px)) {
+    padding-top: 33px;
+  }
+}

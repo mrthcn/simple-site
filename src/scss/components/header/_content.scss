@@ -1,0 +1,39 @@
+.content {
+  max-width: $container-sm;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+
+    @media (max-width: calc($lg - 0.2px)) and (min-width: $xx) {
+      font-size: 2.75rem;
+    }
+    @media (max-width: calc($xx - 0.2px)) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__description {
+    color: $color-secondary;
+    margin-bottom: 22px;
+    line-height: $line-height-lg;
+    padding-top: 11px;
+  }
+
+  &__link {
+    color: $color-white;
+    background-color: $color-primary;
+    letter-spacing: $letter-spacing;
+    padding: 0.5em;
+    min-width: 225px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

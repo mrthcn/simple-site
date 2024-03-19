@@ -1,0 +1,18 @@
+.footer {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 48px 0;
+
+  &_name {
+      font-size: 21px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      padding-left: 8px;
+    }
+
+  &__copyright {
+      font-size: 13px;
+      padding-left: 8px;
+  }
+}
+
